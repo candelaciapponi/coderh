@@ -1,0 +1,72 @@
+//   MOBILE FIRST   
+
+.header {
+    display: flex;
+    grid-area: header;
+    background-color: yellowgreen;
+    justify-content: space-evenly;
+    color: red;
+    justify-items: center;
+    align-items: center;
+    height: 140px;
+
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: red;
+
+        li {
+            padding: 20px;
+            &:hover{
+                color: black;
+            }
+
+            a{
+                color: pink;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1200px){
+
+//     MISSING TABLET 
+
+
+// }
+
+
+@media screen and (min-width: 1200px){
+
+    .header{
+        background-color: yellow;
+        display: flex;
+        justify-content: end;
+        border: 3px solid;
+        height: 200px;
+
+        .navbar{
+            display: flex;
+            width: auto;
+            align-items: flex-end;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+
+                li {
+                    padding: 20px;
+
+                    a{
+                        color: rgb(246, 255, 0);
+                        font-size: 1.3rem;
+                
+                    }
+                } 
+            }
+        }
+    }
+}
