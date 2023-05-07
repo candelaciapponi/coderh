@@ -1,4 +1,4 @@
-MOBILE FIRST    */
+//   MOBILE FIRST   
 
 .aboutme_container {
     font-weight: 100;
@@ -7,103 +7,17 @@ MOBILE FIRST    */
     "header"
     "article"
     "footer";
-    grid-template-rows: 140px 440px 140px;
+    grid-template-rows: 140px 450px 140px;
     grid-template-columns: 1fr;
-    /* align-items: center; */
-    text-align: left;
-    background-color: blue;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+    background-color:pink;
 
-    .aboutme_article {
+    .aboutme_article{
         grid-area: article;
-        margin: 40px 20px 0px 4px;
         display: flex;
-        justify-content: center;
-        font-size: 1.1rem;
-        color: pink;
-        height: 440px;
-        
-        .ph_aboutme {
-            .aboutme_foto {
-                height: 90px;
-                width: 90px;
-                margin-right: 15px;
-            }
-        }
-        
+        background-color: yellowgreen;
+        color: red;
     }
-    
-
 }
-
-
-
-/*     DISPLAY   TABLET     */
-
-/* @media screen and (min-width: 768px) and (orientation: landscape) {
-
-} */
-
-
-   /* @media (min-width: 768px) { */
-
-@media screen and (min-width: 768px) {
-    .aboutme_container {
-        font-family: 'Nanum Brush Script', cursive;
-        font-weight: 100;
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "article article"
-            "footer footer";
-        grid-template-rows: 1fr auto 1fr;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-
-        /* .header{
-            background-color: lavender;
-            display: flex;
-            justify-content: end;
-            border: 3px solid;
-            height: 120px
-        } */
-
-    }
-
-
-    /*     DISPLAY   DESKTOP     */
-
-    @media screen and (min-width: 1200px) {
-        .aboutme_container {
-            font-family: 'Nanum Brush Script', cursive;
-            font-weight: 100;
-            display: grid;
-            grid-template-areas:
-            "header header"
-            "article article"
-            "footer footer";
-            grid-template-rows: 1fr auto 1fr;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            /* text-align: center; */
-        }
-
-
-        .aboutme_texto{
-            width: 70%;
-            font-size: 1.5rem;
-            margin-top: 40px;
-            color: yellow;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-
-        .aboutme_foto {
-            margin-bottom: 50px;
-            width: 160px ;
-            height: 150px;
-            margin-left: 70px;
-
-        }
-    }
-
