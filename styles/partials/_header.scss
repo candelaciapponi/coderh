@@ -3,9 +3,8 @@
 .header {
     display: flex;
     grid-area: header;
-    background-color: yellowgreen;
+    background-color: red;
     justify-content: space-evenly;
-    color: red;
     justify-items: center;
     align-items: center;
     height: 140px;
@@ -14,7 +13,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-color: red;
+
 
         li {
             padding: 20px;
@@ -23,7 +22,7 @@
             }
 
             a{
-                color: pink;
+                color: greenyellow;
                 font-size: 1.2rem;
             }
         }
@@ -38,34 +37,33 @@
 // }
 
 
-@media screen and (min-width: 1200px){
-
-    .header{
-        background-color: yellow;
+@media screen and (min-width: 1220px){
+    .header {
         display: flex;
-        justify-content: end;
-        border: 3px solid;
-        height: 200px;
-
-        .navbar{
+        grid-area: header;
+        background-color: pink;
+        justify-content: flex-end;
+        justify-items: center;
+        align-items: center;
+        height: 140px;
+        
+    
+        .navbar ul {
             display: flex;
-            width: auto;
-            align-items: flex-end;
-
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-end;
-
-                li {
-                    padding: 20px;
-
-                    a{
-                        color: rgb(246, 255, 0);
-                        font-size: 1.3rem;
-                
-                    }
-                } 
+            flex-wrap: wrap;
+            justify-content: space-around;
+    
+    
+            li {
+                padding: 20px;
+                &:hover{
+                    color: black;
+                }
+    
+                a{
+                    color: greenyellow;
+                    font-size: 1.6rem;
+                }
             }
         }
     }

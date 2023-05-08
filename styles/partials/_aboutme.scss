@@ -13,6 +13,7 @@
     text-align: center;
     min-width: 100%;
     background-color: yellowgreen;
+    line-height: 1.4em;
 
     .aboutme_article{
         grid-area: article;
@@ -21,13 +22,13 @@
         font-size: 1.1rem;
         color: red;
         height: 440px;
-        margin-top: 60px;
+        margin: 60px 5px 0px 15px;
 
         .aboutme_framepic{
             .aboutme_pic{
                 height: 90px;
                 width: 90px;
-                margin-right: 5px;
+
             }
         }
     }   
@@ -36,56 +37,61 @@
 
   /* @media (min-width: 768px) { */
 
-    @media screen and (min-width: 768px) {
-        .aboutme_container {
-            font-family: 'Nanum Brush Script', cursive;
-            font-weight: 100;
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "article article"
-                "footer footer";
-            grid-template-rows: 1fr auto 1fr;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-        }
-    
-            /* .header{
-                background-color: lavender;
-                display: flex;
-                justify-content: end;
-                border: 3px solid;
-                height: 120px
-            } */
-    
-        }
+@media screen and (min-width: 768px) {
+    .aboutme_container {
+        font-family: 'Nanum Brush Script', cursive;
+        font-weight: 100;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "article article"
+            "footer footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+        /* .header{
+            background-color: lavender;
+            display: flex;
+            justify-content: end;
+            border: 3px solid;
+            height: 120px
+        } */
+
+}
     
     
         /*     DISPLAY   DESKTOP     */
     
-        @media screen and (min-width: 1200px) {
-            .aboutme_container {
-                font-family: 'Nanum Brush Script', cursive;
-                font-weight: 100;
-                display: grid;
-                grid-template-areas:
-                "header header"
-                "article article"
-                "footer footer";
-                grid-template-rows: 1fr auto 1fr;
-                grid-template-columns: 1fr 1fr;
-                align-items: center;
-                /* text-align: center; */
-            }
-    
-    
+@media screen and (min-width: 1200px) {
+    .aboutme_container {
+        font-family: 'Nanum Brush Script', cursive;
+        font-weight: 100;
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "article article"
+        "footer footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        /* text-align: center; */
+
+
+        .aboutme_article{
             .aboutme_texto{
-                width: 70%;
+                width: 90%;
                 font-size: 1.5rem;
                 margin-top: 40px;
                 color: yellow;
                 margin-left: 20px;
-                margin-right: 20px;
+
+            }
+    
+            h2{
+                display: flex;
+                justify-content: left;
             }
     
             .aboutme_framepic {
@@ -93,7 +99,10 @@
                     margin-bottom: 50px;
                     width: 160px ;
                     height: 150px;
-                    margin-left: 70px;
+                    margin-left: 40px;
                 }
             }
+            
         }
+    }
+}
