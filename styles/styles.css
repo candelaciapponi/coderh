@@ -54,43 +54,53 @@
   display: flex;
   grid-area: footer;
   height: 130px;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: yellow;
   font-size: 0.8rem;
+  width: 100%;
 }
 .footer .footer_text {
-  width: 50%;
+  width: 20%;
   display: flex;
   justify-content: left;
-  margin-top: 80px;
-  margin-left: 5px;
+  margin-top: 100px;
 }
 .footer .footer_logos {
-  width: 40%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: right;
-  margin-top: 20px;
+  margin-right: 15px;
 }
 .footer .footer_logos .footer_logos_img {
-  height: 20px;
-  width: 20px;
-  margin-left: 10px;
+  width: 40px;
+  padding-right: 10px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
+    display: flex;
     height: 180px;
     font-size: 20px;
+    width: 100%;
+    background-color: yellowgreen;
     /* grid-area: footer; */
   }
   .footer .footer_text {
-    margin-top: 130px;
+    max-width: 50%;
+    background-color: red;
+    margin-left: 9px;
+  }
+  .footer .footer_logos {
+    max-width: 50%;
+    background-color: blue;
   }
   .footer .footer_logos .footer_logos_img {
     height: 30px;
     width: 30px;
-    margin-left: 10px;
   }
 }
 .index_container {
@@ -98,7 +108,7 @@
   display: grid;
   grid-template-areas: "header" "article" "footer";
   grid-template-rows: 140px 450px 140px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 370px;
   align-items: center;
   text-align: center;
   min-width: 100%;
@@ -286,10 +296,11 @@
   margin-right: 13px;
 }
 .alvoroca_container .alvoroca_header .alvo_logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   margin-top: 4px;
   margin-left: 5px;
+  margin-right: 10px;
 }
 .alvoroca_container .alvoroca_article {
   grid-area: article;
@@ -299,30 +310,25 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.alvoroca_container .alvoroca_article .section_solapino .card_solap {
-  margin-top: 40px;
-  height: 200px;
-  width: 160px;
-  border-radius: 0px 0px 15px 15px;
+.alvoroca_container .alvoroca_article .section_solapino .card_image .card_images {
+  margin-top: 60px;
+  width: 200px;
+  height: 240px;
   border: solid 1px;
 }
-.alvoroca_container .alvoroca_article .section_solapino .card_solap .card_images {
-  height: 70%;
-  width: 100%;
+.alvoroca_container .alvoroca_article .section_solapino .card_text {
+  padding-top: 140px;
 }
-.alvoroca_container .alvoroca_article .section_solapino .card_body_sola {
-  margin-top: 140px;
+.alvoroca_container .alvoroca_article .section_solapino .card_text .card_title {
+  padding-bottom: 60px;
 }
-.alvoroca_container .alvoroca_article .section_solapino .card_body_sola a {
+.alvoroca_container .alvoroca_article .section_solapino .card_text a {
   text-decoration: none;
-  color: rgb(96, 6, 96);
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 50px;
+  color: green;
 }
 .alvoroca_container .alvoroca_main {
   grid-area: main;
-  /* margin-top: 40px; */
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -355,48 +361,167 @@
   margin-bottom: 15px;
 }
 
-/*
 @media screen and (min-width: 1200px) {
-    .alvoroca_container {
-        display: grid;
-        grid-template-areas:
-                        "header"
-                        "article"
-                        "main"
-                        "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 110px 300px auto 100px;
-    }
-
-    .alvoroca_header{
+  .alvoroca_container {
+    display: grid;
+    grid-template-areas: "header  header   header" "article article article" "main    main    main" "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 110px auto auto 100px;
+  }
+  .alvoroca_container .alvoroca_header {
     display: flex;
     grid-area: header;
-    background-color: orange;
+    background-color: pink;
     align-items: center;
     justify-content: space-evenly;
-    }
-
-    .alvoroca_navbar {
-    width: 60%;
-    border: solid 1px;
-    }
-
-    .alvoroca_nav_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
-
-
-
-    .alvo_logo {
+  }
+  .alvoroca_container .alvoroca_header .alvo_logo {
     width: 50px;
     height: 50px;
     margin-top: 15px;
     margin-left: 5px;
-    }
-
-} */
+  }
+  .alvoroca_container .alvoroca_header .alvoroca_navbar {
+    width: 60%;
+    border: solid 1px;
+  }
+  .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .alvoroca_container .alvoroca_article {
+    grid-area: "article";
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .alvoroca_container .alvoroca_article .section_solapino {
+    display: flex;
+  }
+  .alvoroca_container .alvoroca_article .section_solapino .card_image .card_images {
+    width: 400px;
+    height: 500px;
+  }
+  .alvoroca_container .alvoroca_article .section_solapino .card_text {
+    padding-top: 300px;
+    padding-right: 300px;
+  }
+  .alvoroca_container .alvoroca_article .section_solapino .card_text .card_title {
+    padding-bottom: 80px;
+    font-size: 2em;
+  }
+  .alvoroca_container .alvoroca_article .section_solapino .card_text .addlink {
+    font-size: 1.4em;
+    text-decoration: none;
+    color: black;
+  }
+  .alvoroca_container .alvoroca_main {
+    grid-area: "main";
+    width: 100%;
+  }
+  .alvoroca_container .alvoroca_main .section1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    padding-bottom: 30px;
+  }
+  .alvoroca_container .alvoroca_main .section1 .card {
+    margin-right: 60px;
+    width: 230px;
+    height: auto;
+  }
+  .alvoroca_container .alvoroca_main .section1 .card .card_container .card_images {
+    width: 230px;
+    height: 270px;
+  }
+  .alvoroca_container .alvoroca_main .section1 .card .card_description {
+    margin-top: 15px;
+  }
+  .alvoroca_container .alvoroca_main .section1 .card .card_description .card_title {
+    font-size: 1.7em;
+  }
+  .alvoroca_container .alvoroca_main .section1 .card .card_description .card_details {
+    font-size: 1.4em;
+  }
+  .alvoroca_container .alvoroca_main .section1 .card .card_description a {
+    margin-left: 60%;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: blueviolet;
+    justify-content: right;
+  }
+  .alvoroca_container .alvoroca_main .section2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: greenyellow;
+  }
+  .alvoroca_container .alvoroca_main .section2 .card {
+    margin-right: 60px;
+    width: 230px;
+    height: auto;
+  }
+  .alvoroca_container .alvoroca_main .section2 .card .card_container .card_images {
+    width: 230px;
+    height: 270px;
+  }
+  .alvoroca_container .alvoroca_main .section2 .card .card_description {
+    margin-top: 15px;
+  }
+  .alvoroca_container .alvoroca_main .section2 .card .card_description .card_title {
+    font-size: 1.7em;
+  }
+  .alvoroca_container .alvoroca_main .section2 .card .card_description .card_details {
+    font-size: 1.4em;
+  }
+  .alvoroca_container .alvoroca_main .section2 .card .card_description a {
+    margin-left: 60%;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: blueviolet;
+    justify-content: right;
+  }
+  .alvoroca_container .alvoroca_main .section3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+    padding-top: 70px;
+  }
+  .alvoroca_container .alvoroca_main .section3 .card {
+    margin-right: 60px;
+    width: 230px;
+    height: auto;
+  }
+  .alvoroca_container .alvoroca_main .section3 .card .card_container .card_images {
+    width: 230px;
+    height: 270px;
+  }
+  .alvoroca_container .alvoroca_main .section3 .card .card_description {
+    margin-top: 15px;
+  }
+  .alvoroca_container .alvoroca_main .section3 .card .card_description .card_title {
+    font-size: 1.7em;
+  }
+  .alvoroca_container .alvoroca_main .section3 .card .card_description .card_details {
+    font-size: 1.4em;
+  }
+  .alvoroca_container .alvoroca_main .section3 .card .card_description a {
+    margin-left: 60%;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: blueviolet;
+    justify-content: right;
+  }
+}
 * {
   margin: 0;
   padding: 0;

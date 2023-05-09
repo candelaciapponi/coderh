@@ -36,10 +36,11 @@
         }
 
         .alvo_logo {
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
             margin-top: 4px;
             margin-left: 5px;
+            margin-right: 10px;
         }
     }
 
@@ -50,37 +51,46 @@
             display: flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-
-            .card_solap {
-                margin-top: 40px;
-                height: 200px;
-                width: 160px;
-                border-radius: 0px 0px 15px 15px;
-                border: solid 1px;
-
-                .card_images {
-                    height: 70%;
-                    width: 100%;
-                }
-            }
-
-            .card_body_sola {
-                margin-top: 140px;
             
-                a{
-                    text-decoration: none;
-                    color: rgb(96, 6, 96);
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-top: 50px;
+
+            .card_image {
+                .card_images{                
+                    margin-top: 60px;
+                    
+                    width: 200px;
+                    height: 240px;
+                    border: solid 1px;
+                    
                 }
             }
+
+            .card_text{
+                padding-top: 140px;
+                
+                .card_title{
+                    padding-bottom: 60px;
+                }
+
+                a{                    
+                    text-decoration: none;
+                    color: green;
+                }
+                
+            }     
+                // a{
+                //     text-decoration: none;
+                //     color: rgb(96, 6, 96);
+                //     display: flex;
+                //     justify-content: flex-end;
+                //     margin-top: 50px;
+                // }
+            
         }
     }
 
     .alvoroca_main {
         grid-area: main;
-        /* margin-top: 40px; */
+        margin-top: 60px; 
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -127,45 +137,206 @@
 
 
 
-/*
+
 @media screen and (min-width: 1200px) {
     .alvoroca_container {
         display: grid;
         grid-template-areas:
-                        "header"
-                        "article"
-                        "main"
-                        "footer";
-        grid-template-columns: 1fr;
-        grid-template-rows: 110px 300px auto 100px;
+                        "header  header   header"
+                        "article article article"
+                        "main    main    main"
+                        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 110px auto auto 100px;
+    
+        .alvoroca_header{
+            display: flex;
+            grid-area: header;
+            background-color: pink;
+            align-items: center;
+            justify-content: space-evenly;
+    
+    
+            .alvo_logo {
+                width: 50px;
+                height: 50px;
+                margin-top: 15px;
+                margin-left: 5px;
+            }
+    
+            .alvoroca_navbar {                
+                width: 60%;
+                border: solid 1px;
+    
+                    .alvoroca_nav_list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+            }
+        }
+    
+    
+        .alvoroca_article{
+            grid-area: "article";
+            background-color: lightblue;
+            padding-top: 50px;
+            padding-bottom: 80px;
+
+            .section_solapino{
+                display: flex;
+                .card_image{           
+                    .card_images{
+                        width: 400px;
+                        height: 500px;
+                    }                                                                                                          
+                }
+                .card_text{
+                    padding-top: 300px;
+                    padding-right: 300px;
+                    .card_title{
+                        padding-bottom: 80px;
+                        font-size: 2em;
+                    }
+                    .addlink{
+                        font-size: 1.4em;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }  
+
+        .alvoroca_main{
+            grid-area: "main";
+            width: 100%;
+            
+
+            .section1{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                background-color: yellow;
+                padding-bottom: 30px;
+
+                
+                .card{
+                    margin-right: 60px;
+                    width: 230px;
+                    height: auto;
+
+                    .card_container{
+                        .card_images{
+                            width: 230px;
+                            height: 270px;
+                        }
+                    }
+                    .card_description{
+                        margin-top: 15px;
+                        
+                        .card_title{
+                            font-size: 1.7em;
+                        }
+                        .card_details{
+                            font-size: 1.4em;
+                        }
+
+                        a{
+                            margin-left: 60%;
+                            text-decoration: none;
+                            font-size: 1.4em;
+                            color: blueviolet;
+                            justify-content: right;
+                        }
+                    }
+                }
+
+            }
+
+            .section2{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                background-color: greenyellow;
+
+                .card{
+                    margin-right: 60px;
+                    width: 230px;
+                    height: auto;
+
+                    .card_container{
+                        .card_images{
+                            width: 230px;
+                            height: 270px;
+                        }
+                    }
+                    .card_description{
+                        margin-top: 15px;
+                        
+                        .card_title{
+                            font-size: 1.7em;
+                        }
+                        .card_details{
+                            font-size: 1.4em;
+                        }
+
+                        a{
+                            margin-left: 60%;
+                            text-decoration: none;
+                            font-size: 1.4em;
+                            color: blueviolet;
+                            justify-content: right;
+                        }
+                    }
+                }
+
+            }
+
+            .section3{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                background-color: yellow;
+                padding-top: 70px;
+
+
+                .card{
+                    margin-right: 60px;
+                    width: 230px;
+                    height: auto;
+
+                    .card_container{
+                        .card_images{
+                            width: 230px;
+                            height: 270px;
+                        }
+                    }
+                    .card_description{
+                        margin-top: 15px;
+                        
+                        .card_title{
+                            font-size: 1.7em;
+                        }
+                        .card_details{
+                            font-size: 1.4em;
+                        }
+
+                        a{
+                            margin-left: 60%;
+                            text-decoration: none;
+                            font-size: 1.4em;
+                            color: blueviolet;
+                            justify-content: right;
+                        }
+                    }
+                }             
+            }
+        }
     }
-
-    .alvoroca_header{
-    display: flex;
-    grid-area: header;
-    background-color: orange;
-    align-items: center;
-    justify-content: space-evenly;
-    }
-
-    .alvoroca_navbar {
-    width: 60%;
-    border: solid 1px;
-    }
-
-    .alvoroca_nav_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
-
-
-
-    .alvo_logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 5px;
-    }
-
-} */
+} 
