@@ -46,7 +46,7 @@
     color: black;
   }
   .header .navbar ul li a {
-    color: greenyellow;
+    color: blue;
     font-size: 1.6rem;
   }
 }
@@ -263,11 +263,9 @@
   display: grid;
   grid-template-areas: "header" "article" "main" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 110px 300px auto 100px;
+  grid-template-rows: 110px 300px auto 80px;
 }
-
-/*   header    */
-.alvoroca_header {
+.alvoroca_container .alvoroca_header {
   display: flex;
   grid-area: header;
   background-color: orange;
@@ -275,55 +273,54 @@
   justify-content: space-evenly;
   font-size: 20px;
 }
-
-.alvoroca_navbar {
+.alvoroca_container .alvoroca_header .alvoroca_navbar {
   width: 250px;
   border: solid 1px;
 }
-
-.alvoroca_nav_list {
+.alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.alvoroca_nav_list li {
+.alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
   margin-right: 13px;
 }
-
-.alvo_logo {
-  width: 50px;
-  height: 50px;
-  margin-top: 15px;
+.alvoroca_container .alvoroca_header .alvo_logo {
+  width: 60px;
+  height: 60px;
+  margin-top: 4px;
   margin-left: 5px;
 }
-
-/*   a  r  t  i  c l e  */
-.alvoroca_article {
+.alvoroca_container .alvoroca_article {
   grid-area: article;
 }
-
-/* Sol a Pino card */
-.section_solapino {
+.alvoroca_container .alvoroca_article .section_solapino {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
-.card_solap {
+.alvoroca_container .alvoroca_article .section_solapino .card_solap {
   margin-top: 40px;
   height: 200px;
   width: 160px;
   border-radius: 0px 0px 15px 15px;
   border: solid 1px;
 }
-
-.card_body_sola {
+.alvoroca_container .alvoroca_article .section_solapino .card_solap .card_images {
+  height: 70%;
+  width: 100%;
+}
+.alvoroca_container .alvoroca_article .section_solapino .card_body_sola {
   margin-top: 140px;
 }
-
-/*  m a i n  */
-.alvoroca_main {
+.alvoroca_container .alvoroca_article .section_solapino .card_body_sola a {
+  text-decoration: none;
+  color: rgb(96, 6, 96);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+.alvoroca_container .alvoroca_main {
   grid-area: main;
   /* margin-top: 40px; */
   display: flex;
@@ -333,25 +330,28 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-
-.card {
+.alvoroca_container .alvoroca_main .card {
   width: 150px;
   height: auto;
   border: solid 1px;
   margin-bottom: 20px;
 }
-
-.card_images {
+.alvoroca_container .alvoroca_main .card .card_images {
   height: 70%;
   width: 100%;
 }
-
-.card_body {
+.alvoroca_container .alvoroca_main .card .card_body {
   margin-top: 14px;
   margin-left: 8px;
 }
-
-.card_title {
+.alvoroca_container .alvoroca_main .card .card_body a {
+  text-decoration: none;
+  color: rgb(96, 6, 96);
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4px;
+}
+.alvoroca_container .alvoroca_main .card .card_body .card_title {
   margin-bottom: 15px;
 }
 
