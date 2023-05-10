@@ -11,7 +11,7 @@
                     "main"
                     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 110px 300px auto 80px;
+    grid-template-rows: 110px auto auto 80px;
 
     .alvoroca_header{
         display: flex;
@@ -46,17 +46,18 @@
 
     .alvoroca_article {
         grid-area: article;
+        margin-right: 40px;
 
         .section_solapino {
             display: flex;
             justify-content: space-evenly;
-            flex-wrap: wrap;
+            flex-wrap: wrap;            
             
 
             .card_image {
+                margin-right: 30px;  
                 .card_images{                
-                    margin-top: 60px;
-                    
+                    margin-top: 60px;                                      
                     width: 200px;
                     height: 240px;
                     border: solid 1px;
@@ -65,67 +66,90 @@
             }
 
             .card_text{
-                padding-top: 140px;
+                padding-top: 150px;
                 
                 .card_title{
-                    padding-bottom: 60px;
+                    padding-bottom: 100px;
                 }
 
                 a{                    
+                    display: flex;
+                    justify-content: flex-end;
                     text-decoration: none;
                     color: green;
+                    justify-content: flex-end;
                 }
                 
             }     
-                // a{
-                //     text-decoration: none;
-                //     color: rgb(96, 6, 96);
-                //     display: flex;
-                //     justify-content: flex-end;
-                //     margin-top: 50px;
-                // }
             
         }
+        
     }
 
     .alvoroca_main {
         grid-area: main;
-        margin-top: 60px; 
+        margin-top: 80px; 
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         font-size: 0.9rem;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 20px;
+        // margin-right: 20px;
+        height: auto;
 
-        .card {
-            width: 150px;
-            height: auto;
-            border: solid 1px;
-            margin-bottom: 20px;
-
-            .card_images {
-                height: 70%;
-                width: 100%;
+        .cards{  
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            .card {
+                width: 150px;
+                height: auto;
+                border: solid 1px;
+                margin-bottom: 20px;
+                margin-right: 10px;
+                
+    
+                .card_images {
+                    height: 170px;
+                    width: 100%;
+                }
+    
+                .card_description {
+                    margin-top: 8px;
+                    margin-left: 8px;
+    
+                    .card_title {
+                        margin-bottom: 20px;
+                        
+                    }
+                    a{
+                        text-decoration: none;
+                        color: rgb(96, 6, 96);
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-right: 4px;
+                    }
+                }
             }
 
-            .card_body {
-                margin-top: 14px;
-                margin-left: 8px;
-                a{
-                    text-decoration: none;
-                    color: rgb(96, 6, 96);
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-right: 4px;
+            .card8{
+                background-color: pink;
+                .card_container{
+                    .card_images{
+                        .card8hover{
+                            &:hover{
+                                // background-image: url "../images";
+                                background-image: url("../images/l6.png");
+                            }
+                        }
+
+                    }
+
                 }
 
-                .card_title {
-                    margin-bottom: 15px;
-                    
-                }
             }
-        }
+        }       
         
     }
 }
@@ -182,6 +206,7 @@
             background-color: lightblue;
             padding-top: 50px;
             padding-bottom: 80px;
+            // flex-wrap: wrap;
 
             .section_solapino{
                 display: flex;
@@ -240,7 +265,7 @@
                             font-size: 1.7em;
                         }
                         .card_details{
-                            font-size: 1.4em;
+                            font-size: 3.4em;
                         }
 
                         a{
@@ -331,7 +356,7 @@
                             margin-left: 60%;
                             text-decoration: none;
                             font-size: 1.4em;
-                            color: blueviolet;
+                            color: red;
                             justify-content: right;
                         }
                     }
