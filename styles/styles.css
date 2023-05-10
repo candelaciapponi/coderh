@@ -364,7 +364,7 @@
   margin-left: 8px;
 }
 .alvoroca_container .alvoroca_main .cards .card .card_description .card_title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .alvoroca_container .alvoroca_main .cards .card .card_description a {
   text-decoration: none;
@@ -374,10 +374,10 @@
   margin-right: 4px;
 }
 .alvoroca_container .alvoroca_main .cards .card8 {
-  background-color: pink;
+  background-color: blue;
 }
-.alvoroca_container .alvoroca_main .cards .card8 .card_container .card_images .card8hover:hover {
-  background-image: url("../images/l6.png");
+.alvoroca_container .alvoroca_main .cards .card8:hover {
+  background-color: yellow;
 }
 
 @media screen and (min-width: 1200px) {

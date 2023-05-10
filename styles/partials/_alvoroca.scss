@@ -120,7 +120,7 @@
                     margin-left: 8px;
     
                     .card_title {
-                        margin-bottom: 20px;
+                        margin-bottom: 10px;
                         
                     }
                     a{
@@ -134,20 +134,19 @@
             }
 
             .card8{
-                background-color: pink;
-                .card_container{
-                    .card_images{
-                        .card8hover{
-                            &:hover{
-                                // background-image: url "../images";
-                                background-image: url("../images/l6.png");
-                            }
-                        }
-
-                    }
-
+                background-color: blue;
+                &:hover{
+                    background-color: yellow;
+                    
                 }
-
+                // .card_container{
+                //     img:hover{
+                //             background-position: url("https://drive.google.com/file/d/1Yp42UcrtnvG22ei67j-ns5oYhbE_hEof/view?usp=share_link");                        
+                        
+                //     }
+                // }
+                // `
+                
             }
         }       
         
