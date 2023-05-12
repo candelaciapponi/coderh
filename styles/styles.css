@@ -273,7 +273,7 @@
 .alvoroca_container {
   display: grid;
   grid-template-areas: "header" "article" "main" "footer";
-  grid-template-columns: 1fr;
+  grid-template-columns: 450px;
   grid-template-rows: 110px auto auto 80px;
 }
 .alvoroca_container .alvoroca_header {
@@ -281,21 +281,26 @@
   display: grid;
   grid-template-columns: auto 80%;
   background-color: red;
+  color: yellowgreen;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   font-size: 20px;
-  margin-right: 4px;
   border: solid 1px;
+  padding-left: 60px;
+  padding-right: 15px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-right: 10px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
   margin-right: 3px;
+  color: yellowgreen;
+  text-decoration: none;
 }
 .alvoroca_container .alvoroca_header .alvo_logo {
   width: 80px;
