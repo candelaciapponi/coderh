@@ -296,9 +296,11 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-right: 30px;
+  align-items: center;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
-  margin-right: 5px;
+  margin-right: 7px;
+  margin-top: 8px;
   text-decoration: none;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li a {
