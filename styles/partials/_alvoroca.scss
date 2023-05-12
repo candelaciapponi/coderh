@@ -16,7 +16,6 @@
         display: grid;
         grid-template-columns: auto 80%;
         background-color: red;     
-        color: yellowgreen;
 
         .alvoroca_navbar {
             display: flex;           
@@ -40,6 +39,9 @@
                 a{
                     text-decoration: none;
                     color: gold;
+                }
+                .alvoroca_link{
+                    color: rgb(200, 186, 186)
                 }
             }
             }
