@@ -1,8 +1,6 @@
 
 // MOBILE FIRST 
 
-
-
 .alvoroca_container {
     display: grid;
     grid-template-areas:
@@ -14,15 +12,16 @@
     grid-template-rows: 110px auto auto 80px;
 
     .alvoroca_header{
-        display: flex;
         grid-area: header;
-        background-color: orange;
-        align-items: center;
-        justify-content: space-evenly;
-        font-size: 20px;
+        display: grid;
+        grid-template-columns: auto 80%;
+        background-color: red;     
 
         .alvoroca_navbar {
-            width: 250px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-right: 4px;
             border: solid 1px;
         
             .alvoroca_nav_list {
@@ -30,7 +29,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             li {
-                margin-right: 13px;
+                margin-right: 3px;
             }
             }
         }
@@ -38,69 +37,74 @@
         .alvo_logo {
             width: 80px;
             height: 80px;
-            margin-top: 4px;
-            margin-left: 5px;
+            padding-top: 10px;
+            padding-left: 5px;
             margin-right: 10px;
         }
     }
 
     .alvoroca_article {
-        grid-area: article;
-        margin-right: 40px;
-
-        .section_solapino {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;            
-            
-
-            .card_image {
-                margin-right: 30px;  
-                .card_images{                
-                    margin-top: 60px;                                      
-                    width: 200px;
-                    height: 240px;
-                    border: solid 1px;
+        grid-area: article;   
+        display: grid;
+        grid-template-columns: 70% 30%;
+        flex-direction: row;
+        background-color: pink;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        .card_image {
+            margin-left: 10px;
+            .card_images{                                                                    
+                width: 200px;
+                height: 240px;
+                border: solid 1px;
                     
-                }
+            }
+        }
+
+
+        .card_text{
+            padding-top: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            // height: 100%;
+            align-items: flex-start;
+
+            .card_title{                
+                font-size: 1.6em;
+                text-shadow: 1px 1px;                
+                // text-decoration: solid;
+                
+
+
             }
 
-            .card_text{
-                padding-top: 150px;
-                
-                .card_title{
-                    padding-bottom: 100px;
-                }
 
-                a{                    
-                    display: flex;
-                    justify-content: flex-end;
-                    text-decoration: none;
-                    color: green;
-                    justify-content: flex-end;
-                }
+            a{                                                
+                text-decoration: none;
+                color: green;
                 
-            }     
+            }                
+        }     
             
-        }
-        
     }
+        
+    
 
     .alvoroca_main {
         grid-area: main;
-        margin-top: 80px; 
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        font-size: 0.9rem;
-        margin-left: 20px;
-        // margin-right: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 50px;         
+
         height: auto;
+        background-color: red;
+
 
         .cards{  
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            // display: flex;
+            // justify-content: space-around;
+            // flex-wrap: wrap;
             
             .card {
                 width: 150px;
@@ -148,8 +152,7 @@
                 // `
                 
             }
-        }       
-        
+        }               
     }
 }
 
@@ -161,206 +164,127 @@
 
 
 
-@media screen and (min-width: 1200px) {
-    .alvoroca_container {
-        display: grid;
-        grid-template-areas:
-                        "header  header   header"
-                        "article article article"
-                        "main    main    main"
-                        "footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 110px auto auto 100px;
-    
-        .alvoroca_header{
-            display: flex;
-            grid-area: header;
-            background-color: pink;
-            align-items: center;
-            justify-content: space-evenly;
-    
-    
-            .alvo_logo {
-                width: 50px;
-                height: 50px;
-                margin-top: 15px;
-                margin-left: 5px;
-            }
-    
-            .alvoroca_navbar {                
-                width: 60%;
-                border: solid 1px;
-    
-                    .alvoroca_nav_list {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-between;
-                    }
-            }
-        }
-    
-    
-        .alvoroca_article{
-            grid-area: "article";
-            background-color: lightblue;
-            padding-top: 50px;
-            padding-bottom: 80px;
-            // flex-wrap: wrap;
 
-            .section_solapino{
-                display: flex;
-                .card_image{           
-                    .card_images{
-                        width: 400px;
-                        height: 500px;
-                    }                                                                                                          
-                }
-                .card_text{
-                    padding-top: 300px;
-                    padding-right: 300px;
-                    .card_title{
-                        padding-bottom: 80px;
-                        font-size: 2em;
-                    }
-                    .addlink{
-                        font-size: 1.4em;
-                        text-decoration: none;
-                        color: black;
-                    }
-                }
-            }
-        }  
+// @media screen and (min-width: 1200px) {
+//     .alvoroca_container {
+//         display: grid;
+//         grid-template-areas:
+//                         "header  header   header"
+//                         "article article article"
+//                         "main    main    main"
+//                         "footer footer footer";
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-template-rows: 110px auto auto 100px;
+    
+//         .alvoroca_header{
+//             grid-area: header;
+//             display: flex;            
+//             background-color: pink;
+//             align-items: center;
+//             justify-content: space-evenly;
+    
+    
+//             .alvo_logo {
+//                 width: 50px;
+//                 height: 50px;
+//                 margin-top: 15px;
+//                 margin-left: 5px;
+//             }
+    
+//             .alvoroca_navbar {                
+//                 width: 60%;
+//                 border: solid 1px;
+    
+//                     .alvoroca_nav_list {
+//                         display: flex;
+//                         flex-wrap: wrap;
+//                         justify-content: space-between;
+//                     }
+//             }
+//         }
+    
+    
+//         .alvoroca_article{
+//             grid-area: article;
+//             background-color: lightblue;
+//             padding-top: 50px;
+//             padding-bottom: 80px;
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
 
-        .alvoroca_main{
-            grid-area: "main";
-            width: 100%;
+//             .card_image{           
+//                 .card_images{
+//                     width: 400px;
+//                     height: 500px;
+//                 }                                                                                                          
+//             }
+
+//             .card_text{
+//                 padding-top: 300px;
+//                 padding-right: 300px;
+//                 .card_title{
+//                     padding-bottom: 80px;
+//                     font-size: 2em;
+//                 }
+//                 .addlink{
+//                     font-size: 1.4em;
+//                     text-decoration: none;
+//                     color: black;
+//                 }
+//                 }
+
+//         }  
+
+//         .alvoroca_main{
+//             grid-area: main;
+//             background-color: pink;            
+//             width: 100%;
+//             height: auto;
             
 
-            .section1{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 100%;
-                height: auto;
-                background-color: yellow;
-                padding-bottom: 30px;
+//             .cards{
+//                 display: flex;
+//                 justify-content: space-evenly;
+//                 align-items: center;
+//                 width: 100%;
+//                 height: auto;
+//                 padding-bottom: 30px;
 
                 
-                .card{
-                    margin-right: 60px;
-                    width: 230px;
-                    height: auto;
+//                 .card{
+//                     margin-right: 40px;
+//                     margin-left: 40px;
+//                     margin-bottom: 70px;
+//                     width: 220px;
+//                     height: auto;
 
-                    .card_container{
-                        .card_images{
-                            width: 230px;
-                            height: 270px;
-                        }
-                    }
-                    .card_description{
-                        margin-top: 15px;
+//                     .card_container{
+//                         .card_images{
+//                             width: 220px;
+//                             height: 250px;
+//                         }
+//                     }
+//                     .card_description{
+//                         margin-top: 15px;
                         
-                        .card_title{
-                            font-size: 1.7em;
-                        }
-                        .card_details{
-                            font-size: 3.4em;
-                        }
+//                         .card_title{
+//                             font-size: 1.7em;
+//                         }
+//                         .card_details{
+//                             font-size: 1.7em;
+//                         }
 
-                        a{
-                            margin-left: 60%;
-                            text-decoration: none;
-                            font-size: 1.4em;
-                            color: blueviolet;
-                            justify-content: right;
-                        }
-                    }
-                }
+//                         a{
+//                             margin-left: 60%;
+//                             text-decoration: none;
+//                             font-size: 1.4em;
+//                             color: blueviolet;
+//                             justify-content: right;
+//                         }
+//                     }
+//                 }
 
-            }
-
-            .section2{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 100%;
-                height: auto;
-                background-color: greenyellow;
-
-                .card{
-                    margin-right: 60px;
-                    width: 230px;
-                    height: auto;
-
-                    .card_container{
-                        .card_images{
-                            width: 230px;
-                            height: 270px;
-                        }
-                    }
-                    .card_description{
-                        margin-top: 15px;
-                        
-                        .card_title{
-                            font-size: 1.7em;
-                        }
-                        .card_details{
-                            font-size: 1.4em;
-                        }
-
-                        a{
-                            margin-left: 60%;
-                            text-decoration: none;
-                            font-size: 1.4em;
-                            color: blueviolet;
-                            justify-content: right;
-                        }
-                    }
-                }
-
-            }
-
-            .section3{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                width: 100%;
-                height: auto;
-                background-color: yellow;
-                padding-top: 70px;
-
-
-                .card{
-                    margin-right: 60px;
-                    width: 230px;
-                    height: auto;
-
-                    .card_container{
-                        .card_images{
-                            width: 230px;
-                            height: 270px;
-                        }
-                    }
-                    .card_description{
-                        margin-top: 15px;
-                        
-                        .card_title{
-                            font-size: 1.7em;
-                        }
-                        .card_details{
-                            font-size: 1.4em;
-                        }
-
-                        a{
-                            margin-left: 60%;
-                            text-decoration: none;
-                            font-size: 1.4em;
-                            color: red;
-                            justify-content: right;
-                        }
-                    }
-                }             
-            }
-        }
-    }
-} 
+//             }
+//         }
+//      }
+// } 
