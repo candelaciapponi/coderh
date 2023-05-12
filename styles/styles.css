@@ -294,7 +294,7 @@
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-right: 10px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
