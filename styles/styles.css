@@ -60,7 +60,7 @@
 .footer .footer_text {
   font-size: 0.8rem;
   margin-left: 5px;
-  margin-top: 90px;
+  margin-top: 80px;
   color: yellow;
   display: flex;
   align-items: center;
@@ -269,15 +269,15 @@
 
 .alvoroca_container {
   display: grid;
-  grid-template-areas: "header" "article" "main" "footer";
+  grid-template-areas: "header" "banner" "article" "main" "footer";
   grid-template-columns: 450px;
-  grid-template-rows: 110px auto auto 80px;
+  grid-template-rows: 120px auto auto auto 80px;
 }
 .alvoroca_container .alvoroca_header {
   grid-area: header;
   display: grid;
-  grid-template-columns: auto 80%;
-  background-color: red;
+  grid-template-columns: 30% 70%;
+  background-color: olive;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar {
   display: flex;
@@ -295,7 +295,7 @@
   align-items: center;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
-  margin-right: 7px;
+  margin-right: 10px;
   margin-top: 8px;
   text-decoration: none;
 }
@@ -307,11 +307,15 @@
   color: rgb(200, 186, 186);
 }
 .alvoroca_container .alvoroca_header .alvo_logo {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   padding-top: 10px;
   padding-left: 5px;
   margin-right: 10px;
+}
+.alvoroca_container .alvoroca_banner .banner_img {
+  height: 100%;
+  width: 450px;
 }
 .alvoroca_container .alvoroca_article {
   grid-area: article;
@@ -319,7 +323,7 @@
   grid-template-columns: 60% auto;
   flex-direction: row;
   background-color: pink;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 30px;
   padding-left: 20px;
 }
