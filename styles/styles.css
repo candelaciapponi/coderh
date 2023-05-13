@@ -79,26 +79,25 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
-    display: flex;
-    height: 180px;
-    font-size: 20px;
-    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: yellowgreen;
-    /* grid-area: footer; */
+    height: 160px;
   }
   .footer .footer_text {
-    max-width: 50%;
-    background-color: red;
-    margin-left: 9px;
+    width: 100%;
+    font-size: 1.3rem;
+    padding-left: 8px;
+    color: rgb(61, 61, 123);
   }
   .footer .footer_logos {
-    margin-left: 250px;
-    max-width: 50%;
-    background-color: blue;
+    width: 100%;
+    padding-right: 50px;
   }
   .footer .footer_logos .footer_logos_img {
     height: 30px;
-    width: 40px;
+    width: 30px;
   }
 }
 .index_container {
@@ -414,25 +413,48 @@
     display: grid;
     grid-template-areas: "header  header   header" "banner  banner   banner" "article article article" "main    main    main" "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 110px auto auto 100px;
+    grid-template-rows: 190px auto auto auto 100px;
   }
   .alvoroca_container .alvoroca_header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 30% 70%;
-    background-color: whitesmoke;
+    grid-template-columns: 40% 60%;
+  }
+  .alvoroca_container .alvoroca_header .alvoroca_logo {
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+  .alvoroca_container .alvoroca_header .alvoroca_logo .alvo_logo {
+    padding-left: 0px;
+    width: 170px;
+    height: 160px;
+  }
+  .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li a {
+    font-size: 1.7rem;
   }
   .alvoroca_container .alvoroca_banner {
     grid-area: banner;
+    background-attachment: fixed;
+  }
+  .alvoroca_container .alvoroca_banner .banner_img {
+    min-width: 100%;
+    width: 450px;
+    background-attachment: fixed;
   }
   .alvoroca_container .alvoroca_article {
     grid-area: article;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .alvoroca_container .alvoroca_main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 90px;
   }
-  .alvoroca_container .footer {
+  .alvoroca_container .footer, .alvoroca_container .footer_alvo {
     grid-area: footer;
+    background-color: yellow;
   }
 }
 * {

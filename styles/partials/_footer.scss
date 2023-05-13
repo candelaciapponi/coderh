@@ -47,27 +47,27 @@
 
 @media screen and (min-width: 1200px){
     .footer{
-        display: flex;
-        height: 180px;
-        font-size: 20px;
-        width: 100%;
+        grid-area: footer;
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+        // background-color: $bkgrn-alvoroca;
         background-color: yellowgreen;
-        /* grid-area: footer; */
+        height: 160px;
 
         .footer_text {
-            max-width: 50%;
-            background-color: red;
-            margin-left: 9px;
+            width: 100%;
+            font-size: 1.3rem;
+            padding-left: 8px;   
+            color: $kerosene-link;    
         }
 
         .footer_logos {   
-            margin-left: 250px;
-            max-width: 50%;        
-            background-color: blue;
+            width: 100%;        
+            padding-right: 50px;
 
             .footer_logos_img {
                 height: 30px;
-                width: 40px;                
+                width: 30px;                
             }
         }
     }
