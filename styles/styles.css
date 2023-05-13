@@ -51,33 +51,30 @@
   }
 }
 .footer {
-  display: flex;
   grid-area: footer;
   height: 130px;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: yellow;
-  font-size: 0.8rem;
-  width: 100%;
+  background-color: olive;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .footer .footer_text {
-  width: 20%;
+  font-size: 0.8rem;
+  margin-left: 5px;
+  margin-top: 90px;
+  color: yellow;
   display: flex;
-  justify-content: left;
-  margin-top: 100px;
+  align-items: center;
 }
 .footer .footer_logos {
-  width: 70%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: right;
-  margin-right: 15px;
+  margin-right: 30px;
 }
 .footer .footer_logos .footer_logos_img {
   width: 40px;
-  padding-right: 10px;
-  margin-left: 20px;
+  margin-left: 9px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -324,9 +321,7 @@
   background-color: pink;
   padding-top: 60px;
   padding-bottom: 30px;
-}
-.alvoroca_container .alvoroca_article .card_image {
-  margin-left: 10px;
+  padding-left: 20px;
 }
 .alvoroca_container .alvoroca_article .card_image .card_images {
   width: 230px;
@@ -353,39 +348,43 @@
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 50px;
   height: auto;
+  width: 100%;
   background-color: red;
+  align-items: center;
+  padding: 50px 20px 20px 30px;
+  gap: 40px;
 }
-.alvoroca_container .alvoroca_main .cards .card {
-  width: 150px;
+.alvoroca_container .alvoroca_main .card {
+  width: 140px;
   height: auto;
   border: solid 1px;
-  margin-bottom: 20px;
-  margin-right: 10px;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 5px;
+  margin-right: 20px;
 }
-.alvoroca_container .alvoroca_main .cards .card .card_images {
+.alvoroca_container .alvoroca_main .card .card_images {
   height: 170px;
   width: 100%;
 }
-.alvoroca_container .alvoroca_main .cards .card .card_description {
+.alvoroca_container .alvoroca_main .card .card_description {
   margin-top: 8px;
   margin-left: 8px;
 }
-.alvoroca_container .alvoroca_main .cards .card .card_description .card_title {
+.alvoroca_container .alvoroca_main .card .card_description .card_title {
   margin-bottom: 10px;
 }
-.alvoroca_container .alvoroca_main .cards .card .card_description a {
+.alvoroca_container .alvoroca_main .card .card_description a {
   text-decoration: none;
-  color: rgb(96, 6, 96);
+  color: gold;
   display: flex;
   justify-content: flex-end;
-  margin-right: 4px;
+  margin-right: 14px;
 }
-.alvoroca_container .alvoroca_main .cards .card8 {
+.alvoroca_container .alvoroca_main .card8 {
   background-color: blue;
 }
-.alvoroca_container .alvoroca_main .cards .card8:hover {
+.alvoroca_container .alvoroca_main .card8:hover {
   background-color: yellow;
 }
 

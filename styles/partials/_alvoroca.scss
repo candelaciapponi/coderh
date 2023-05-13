@@ -64,9 +64,11 @@
         background-color: pink;
         padding-top: 60px;
         padding-bottom: 30px;
+        padding-left: 20px;
+   
 
         .card_image {
-            margin-left: 10px;
+
             .card_images{                                                                    
                 width: 230px;
                 height: 260px;
@@ -99,65 +101,64 @@
     .alvoroca_main {
         grid-area: main;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 50px;         
-
+        grid-template-columns: 1fr 1fr;    
         height: auto;
+        width: 100%;
         background-color: red;
+        align-items: center;
+        // padding-top: 50px;     
+        // padding-left: 20px;
+        // padding-right: 20px;
+        // padding-bottom: 30px;
+        padding: 50px 20px 20px 30px;
+        gap: 40px;
 
-
-        .cards{  
-            // display: flex;
-            // justify-content: space-around;
-            // flex-wrap: wrap;
+        .card {
+            width: 140px;
+            height: auto;
+            border: solid 1px;
+            border-radius: 0px 0px 5px 5px;
+            margin-bottom: 5px;
+            margin-right: 20px;
             
-            .card {
-                width: 150px;
-                height: auto;
-                border: solid 1px;
-                margin-bottom: 20px;
-                margin-right: 10px;
-                
-    
-                .card_images {
-                    height: 170px;
-                    width: 100%;
-                }
-    
-                .card_description {
-                    margin-top: 8px;
-                    margin-left: 8px;
-    
-                    .card_title {
-                        margin-bottom: 10px;
-                        
-                    }
-                    a{
-                        text-decoration: none;
-                        color: rgb(96, 6, 96);
-                        display: flex;
-                        justify-content: flex-end;
-                        margin-right: 4px;
-                    }
-                }
+
+            .card_images {
+                height: 170px;
+                width: 100%;
             }
 
-            .card8{
-                background-color: blue;
-                &:hover{
-                    background-color: yellow;
+            .card_description {
+                margin-top: 8px;
+                margin-left: 8px;
+
+                .card_title {
+                    margin-bottom: 10px;
                     
                 }
-                // .card_container{
-                //     img:hover{
-                //             background-position: url("https://drive.google.com/file/d/1Yp42UcrtnvG22ei67j-ns5oYhbE_hEof/view?usp=share_link");                        
-                        
-                //     }
-                // }
-                // `
+                a{
+                    text-decoration: none;
+                    color: gold;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 14px;
+                }
+            }
+        }
+        .card8{
+            background-color: blue;
+            &:hover{
+                background-color: yellow;
                 
             }
-        }               
+            // .card_container{
+            //     img:hover{
+            //             background-position: url("https://drive.google.com/file/d/1Yp42UcrtnvG22ei67j-ns5oYhbE_hEof/view?usp=share_link");                        
+                    
+            //     }
+            // }
+            // `
+            
+        }        
     }
 }
 
