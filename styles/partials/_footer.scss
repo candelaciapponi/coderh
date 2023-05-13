@@ -3,7 +3,7 @@
 .footer {
     grid-area: footer;
     height: 130px;
-    background-color: olive;
+    background-color: red;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -12,7 +12,7 @@
         font-size: 0.8rem;
         margin-left: 5px;
         margin-top: 80px;
-        color: yellow;
+        color: $kerosene-link;
         display: flex;
         align-items: center;
         
@@ -26,8 +26,8 @@
         margin-right: 30px;
 
         .footer_logos_img {
-            width: 40px;
-            margin-left: 9px;
+            width: 30px;
+            margin-left: 12px;
 
         }
     }
