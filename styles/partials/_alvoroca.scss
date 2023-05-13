@@ -16,7 +16,7 @@
         grid-area: header;
         display: grid;
         grid-template-columns: 30% 70%;
-        background-color: white;
+        background-color: whitesmoke;
 
         .alvoroca_navbar {
             display: flex;           
@@ -24,7 +24,7 @@
             // border: solid 1px;
             padding-left: 60px;
             padding-right: 15px;
-            // background-color: red;
+            
         
             .alvoroca_nav_list {
             display: flex;
@@ -66,7 +66,7 @@
 
     .alvoroca_banner{
         margin-top: 40px;
-        background-color: white;
+        background-color: whitesmoke;
         .banner_img{
             height: 100%;
             width: 450px;
