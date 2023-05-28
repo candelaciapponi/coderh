@@ -266,33 +266,49 @@
   background: blueviolet;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+
 .alvoroca_container {
   display: grid;
+  gap: 30px;
   grid-template-areas: "header" "banner" "article" "main" "footer";
-  grid-template-columns: 450px;
+  grid-template-columns: 100%;
+  width: 100vw;
   grid-template-rows: 160px auto auto auto 80px;
 }
 .alvoroca_container .alvoroca_header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: auto 80%;
   background-color: white;
   align-items: start;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar {
   display: flex;
   align-items: start;
-  padding-left: 60px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 0px;
   padding-top: 40px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-right: 20px;
+  margin-right: 5px;
   align-items: center;
   width: 100%;
+  background-color: yellow;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
   margin-right: 13px;
@@ -319,10 +335,11 @@
 }
 .alvoroca_container .alvoroca_banner {
   background-color: chartreuse;
+  display: flex;
+  align-items: center;
 }
 .alvoroca_container .alvoroca_banner .banner_img {
-  height: 100%;
-  width: 450px;
+  width: 470px;
 }
 .alvoroca_container .alvoroca_article {
   grid-area: article;
@@ -332,7 +349,7 @@
   align-content: center;
   padding-top: 80px;
   padding-bottom: 30px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 .alvoroca_container .alvoroca_article .card_image .card_images {
   width: 230px;
@@ -344,7 +361,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 10px;
+  padding-left: 20px;
   align-items: flex-start;
 }
 .alvoroca_container .alvoroca_article .card_text .card_title {
@@ -368,7 +385,7 @@
   background-color: white;
   align-items: center;
   padding: 50px 20px 20px 30px;
-  gap: 40px;
+  gap: 30px;
 }
 .alvoroca_container .alvoroca_main .card {
   width: 170px;
