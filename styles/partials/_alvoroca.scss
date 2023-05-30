@@ -22,13 +22,13 @@ body {
     grid-template-columns: 1fr;
     gap: 30px;
     min-width: 100%;
+    background-color: $bkgrn-alvoroca;
     
     .alvoroca_header{
-        margin-top: 20px;
+        padding-top: 20px;
         grid-area: header;
         display: grid;
         grid-template-columns: 20% auto;
-        background-color: $bkgrn-alvoroca;
 
 
         .alvoroca_logo {        
@@ -46,21 +46,21 @@ body {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            background-color: yellow;
 
             li {
                 margin-right: 8px;
                 margin-top: 8px;
                 text-decoration: none;
+
                 
                 a{
                     text-decoration: none;
-                    color: rgb(137, 137, 201);
+                    color: $f-header-links;
                     font-size: 1.3rem;
                 }
-                .alvoroca_link{
-                    color: rgb(178, 178, 246);
-                    font-size: 1.5rem;                                                   
+                .alvoroca_link{                    
+                    font-size: 1.6rem;   
+                    color: $f-header-links;                                                
                 }
             }
             }
@@ -69,18 +69,17 @@ body {
 
 
     .alvoroca_banner{
-    //     // background-color: $bkgrn-alvoroca;   
-    .banner_img{
-        width: 100%;
-        height: 120%;
-    }        
+        height: auto;
+        .banner_img{
+            width: 100%;
+            height: 120%;
+        }        
     }
 
     .alvoroca_article {
         grid-area: article;   
         display: grid;
         grid-template-columns: 70% auto;   
-        background-color: $bkgrn-alvoroca;
         align-content: center;
         padding: 100px 10px 100px 10px;
 
@@ -97,16 +96,18 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: flex-start;     
+            color: $f-solapino;       
 
             .card_title{                
-                font-size: 1.6em;
-                text-shadow: 0.5px 0.5px;                
-                color: rgb(151, 151, 240);
+                font-size: 1.7em;
+                text-shadow: 0.3px 0.5px;                
+
             }
             a{                                                
                 text-decoration: none;
-                color: rgb(161, 161, 245);
+                color: $f-solapino;       
+
             }      
             
             .addlink{
@@ -117,20 +118,20 @@ body {
         
     
 
-    .alvoroca_main {
+    .alvoroca_main {        
         grid-area: main;
         display: grid;
         grid-template-columns: 1fr 1fr;    
         height: auto;
         width: 100%;
-        background-color: $bkgrn-alvoroca;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
         padding-left: 10px;
-        padding-right: 10px;
+
+        
 
         .card {
-            width: 100%;
+            width: 90%;
             height: auto;
             border: solid 1px;
             border-radius: 0px 0px 5px 5px;
@@ -143,17 +144,18 @@ body {
 
             .card_description {
                 margin-top: 8px;
-                margin-left: 8px;                
-                color: rgb(137, 137, 201);
+                margin-left: 6px;                
+                color: $f-cards-text;
 
                 .card_title {
+                    text-align: center;
                     margin-bottom: 10px;
-                    color:rgb(80, 80, 136);
+                    color: $f-cards-text;
                 }
                 a{
                     margin-top: 20px    ;
                     text-decoration: none;
-                    color: rgb(122, 122, 246);
+                    color: $f-cards-links;
                     display: flex;
                     justify-content: flex-end;
                     margin-right: 14px;                
@@ -175,6 +177,12 @@ body {
 
     .footer, .footer_alvo{
         background-color: $bkgrn-alvoroca;
+        .footer_text{
+            a{
+                color: $kerosene-link;
+            }
+        }
+
     }
 }
 

@@ -61,7 +61,7 @@
   font-size: 0.8rem;
   margin-left: 5px;
   margin-top: 80px;
-  color: rgb(61, 61, 123);
+  color: rgb(234, 170, 0);
   display: flex;
   align-items: center;
 }
@@ -73,6 +73,7 @@
   margin-right: 30px;
 }
 .footer .footer_logos .footer_logos_img {
+  height: 30px;
   width: 30px;
   margin-left: 12px;
 }
@@ -89,7 +90,7 @@
     width: 100%;
     font-size: 1.3rem;
     padding-left: 8px;
-    color: rgb(61, 61, 123);
+    color: rgb(234, 170, 0);
   }
   .footer .footer_logos {
     width: 100%;
@@ -282,13 +283,13 @@ body {
   grid-template-columns: 1fr;
   gap: 30px;
   min-width: 100%;
+  background-color: rgb(116, 47, 55);
 }
 .alvoroca_container .alvoroca_header {
-  margin-top: 20px;
+  padding-top: 20px;
   grid-area: header;
   display: grid;
   grid-template-columns: 20% auto;
-  background-color: white;
 }
 .alvoroca_container .alvoroca_header .alvoroca_logo {
   margin-left: 5px;
@@ -304,7 +305,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: yellow;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li {
   margin-right: 8px;
@@ -313,12 +313,15 @@ body {
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li a {
   text-decoration: none;
-  color: rgb(137, 137, 201);
+  color: rgb(227, 218, 201);
   font-size: 1.3rem;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list li .alvoroca_link {
-  color: rgb(178, 178, 246);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: rgb(227, 218, 201);
+}
+.alvoroca_container .alvoroca_banner {
+  height: auto;
 }
 .alvoroca_container .alvoroca_banner .banner_img {
   width: 100%;
@@ -328,7 +331,6 @@ body {
   grid-area: article;
   display: grid;
   grid-template-columns: 70% auto;
-  background-color: white;
   align-content: center;
   padding: 100px 10px 100px 10px;
 }
@@ -343,15 +345,15 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
+  color: white;
 }
 .alvoroca_container .alvoroca_article .card_text .card_title {
-  font-size: 1.6em;
-  text-shadow: 0.5px 0.5px;
-  color: rgb(151, 151, 240);
+  font-size: 1.7em;
+  text-shadow: 0.3px 0.5px;
 }
 .alvoroca_container .alvoroca_article .card_text a {
   text-decoration: none;
-  color: rgb(161, 161, 245);
+  color: white;
 }
 .alvoroca_container .alvoroca_article .card_text .addlink {
   font-size: 1.4rem;
@@ -362,14 +364,12 @@ body {
   grid-template-columns: 1fr 1fr;
   height: auto;
   width: 100%;
-  background-color: white;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
   padding-left: 10px;
-  padding-right: 10px;
 }
 .alvoroca_container .alvoroca_main .card {
-  width: 100%;
+  width: 90%;
   height: auto;
   border: solid 1px;
   border-radius: 0px 0px 5px 5px;
@@ -381,17 +381,18 @@ body {
 }
 .alvoroca_container .alvoroca_main .card .card_description {
   margin-top: 8px;
-  margin-left: 8px;
-  color: rgb(137, 137, 201);
+  margin-left: 6px;
+  color: white;
 }
 .alvoroca_container .alvoroca_main .card .card_description .card_title {
+  text-align: center;
   margin-bottom: 10px;
-  color: rgb(80, 80, 136);
+  color: white;
 }
 .alvoroca_container .alvoroca_main .card .card_description a {
   margin-top: 20px;
   text-decoration: none;
-  color: rgb(122, 122, 246);
+  color: lavender;
   display: flex;
   justify-content: flex-end;
   margin-right: 14px;
@@ -403,7 +404,10 @@ body {
   background-color: yellow;
 }
 .alvoroca_container .footer, .alvoroca_container .footer_alvo {
-  background-color: white;
+  background-color: rgb(116, 47, 55);
+}
+.alvoroca_container .footer .footer_text a, .alvoroca_container .footer_alvo .footer_text a {
+  color: rgb(234, 170, 0);
 }
 
 /*
