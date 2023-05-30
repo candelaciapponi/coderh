@@ -278,15 +278,16 @@ body {
 .alvoroca_container {
   display: grid;
   grid-template-areas: "header" "banner" "article" "main" "footer";
-  grid-template-rows: 140px auto auto auto 80px;
+  grid-template-rows: auto auto auto auto 80px;
   grid-template-columns: 1fr;
   gap: 30px;
   min-width: 100%;
 }
 .alvoroca_container .alvoroca_header {
+  margin-top: 20px;
   grid-area: header;
   display: grid;
-  grid-template-columns: auto 80%;
+  grid-template-columns: 20% auto;
   background-color: white;
 }
 .alvoroca_container .alvoroca_header .alvoroca_logo {
@@ -319,11 +320,9 @@ body {
   color: rgb(178, 178, 246);
   font-size: 1.5rem;
 }
-.alvoroca_container .alvoroca_banner {
-  background-color: chartreuse;
-}
 .alvoroca_container .alvoroca_banner .banner_img {
-  width: 80%;
+  width: 100%;
+  height: 120%;
 }
 .alvoroca_container .alvoroca_article {
   grid-area: article;
@@ -331,8 +330,7 @@ body {
   grid-template-columns: 70% auto;
   background-color: white;
   align-content: center;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding: 100px 10px 100px 10px;
 }
 .alvoroca_container .alvoroca_article .card_image .card_images {
   width: 230px;
@@ -367,9 +365,11 @@ body {
   background-color: white;
   align-items: center;
   gap: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .alvoroca_container .alvoroca_main .card {
-  width: 170px;
+  width: 100%;
   height: auto;
   border: solid 1px;
   border-radius: 0px 0px 5px 5px;
