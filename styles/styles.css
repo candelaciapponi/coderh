@@ -295,11 +295,11 @@ body {
   margin-left: 5px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_logo .alvo_logo {
-  width: 87px;
+  width: 95px;
   height: 90px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 .alvoroca_container .alvoroca_header .alvoroca_navbar .alvoroca_nav_list {
   display: flex;
